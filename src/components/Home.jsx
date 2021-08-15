@@ -17,8 +17,8 @@ function Home() {
             <br/>
             <Button.Group>
               <Button>WHO IS HIRO?</Button>
-              <Button>WHO IS HIRO?</Button>
-              <Button>WHO IS HIRO?</Button>
+              <Button>筋トレ日記</Button>
+              <Button>モデル依頼</Button>
               <Button><Icon name = "twitter"/></Button>
               <Button><Icon name = "instagram"/></Button>
               <Button><Icon name = "youtube"/></Button>
