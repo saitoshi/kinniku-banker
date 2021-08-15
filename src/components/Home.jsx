@@ -8,7 +8,7 @@ function Home() {
       <div className="bg-home">
         <div className="center-screen">
           <Segment>
-            <Image src = "image/hiro_index.jpg" size = "medium" cicurlar/>
+            <Image src = "https://github.com/saitoshi/kinniku-banker/blob/issue-01/src/components/image/hiro_index.jpg?raw=true" size = "medium" circular centered/>
             <Header as = "h1" textAlign = 'centered'>HIR♾fitness</Header>
             <p>はじめまして！沖縄県で機能的で綺麗な筋肉の育成に夢中のヒロです！🌺 <br/>
               各SNSで筋トレについて発信しています❗️<br/>
