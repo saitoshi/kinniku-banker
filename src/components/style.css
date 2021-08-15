@@ -13,3 +13,17 @@ body, html {
 .center-screen p {
     font-size: 20px;
 }
+
+.bg-home  {
+    background-image: url("image/okinawa.png");
+    background-repeat: no-repeat;
+    background-color: #cccccc;
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
