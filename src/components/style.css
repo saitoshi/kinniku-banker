@@ -67,4 +67,16 @@ body, html {
     .sidenav a {font-size: 18px;}
 }
 
+.who {
+    background-image: url("image/who_header.png");
+    background-repeat: no-repeat;
+    background-color: #cccccc;
+    /* Full height */
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    padding: 60px 50px 50px 60px;
+}
 

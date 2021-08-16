@@ -1,7 +1,8 @@
 import React from "react";
 import { HashRouter as Router, Route, Switch } from "react-router-dom";
 import {
-  Home
+  Home,
+  Who
 } from "./components";
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Router>
         <Switch>
           <Route path="/" exact component={() => <Home />} />
+          <Route path="/who" exact component={() => <Who />} />
         </Switch>
       </Router>
     </div>

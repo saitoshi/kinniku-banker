@@ -1,23 +1,47 @@
 import React from "react";
 import './style.css';
 import { NavLink, withRouter } from "react-router-dom";
-import { Menu, Sticky } from 'semantic-ui-react';
+import { Menu, Sticky, Sidebar } from 'semantic-ui-react';
 import 'semantic-ui-css/semantic.min.css';
 
+class NavBar extends  React.Component {
+  state = {
+    visible: false,
+    visible2: false,
+  }
 
-function openNav() {
-  document.getElementById("mySidenav").style.width = "350px";
-}
+  handleShowClick = () => {
+    this.setState((prevState) => ({
+      visible: !prevState.visible,
+    }));
+  }
 
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-}
+  handleShowClick2 = () => {
+    this.setState((prevState) => ({
+      visible2: !prevState.visible2,
+    }));
+  }
 
-function NavBar(props) {
-  return (
-        <Menu size = 'huge' inverted color = 'teal' vertical>
-          <Menu.Item>WHO IS HIRO?</Menu.Item>
-        </Menu>
-  );
+  render() {
+    const { visible } = this.state;
+    return (
+        <div>
+          <Sidebar as = {Menu}
+                   animation = 'push'
+                   direction = 'left'
+                   icon = 'labeled'
+                   inverted
+                   vertical
+                   visible = {visible}
+                   width='thin'
+                   color='teal'
+                   style={{ height: '100vh', minHeight: '100vh' }}
+                   >
+            <Menu.Item style={{ floated: 'left', width: '100%' }} >WHO IS HIRO?</Menu.Item>
+          </Sidebar>
+
+        </div>
+    );
+  }
 }
 export default withRouter(NavBar);
