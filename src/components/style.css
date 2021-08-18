@@ -54,6 +54,10 @@ body, html {
     color: blue;
 }
 
+p {
+    font-size: 20px;
+}
+
 .sidenav .closebtn {
     position: absolute;
     top: 0;

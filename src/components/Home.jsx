@@ -2,6 +2,7 @@ import React from "react";
 import './style.css';
 import 'semantic-ui-css/semantic.min.css';
 import { Header, Segment, Image, Button, Icon} from 'semantic-ui-react';
+import { NavLink } from 'react-router-dom';
 
 function Home() {
   return (
@@ -16,10 +17,10 @@ function Home() {
               ぜひ一緒にフィットネスや健康生活頑張りましょう😊✨</p>
             <br/>
             <Button.Group>
-              <Button>WHO IS HIRO?</Button>
+              <Button as = {NavLink} exact to ={"/who"}>WHO IS HIRO?</Button>
               <Button>筋トレ日記</Button>
               <Button>モデル依頼</Button>
-              <Button><Icon name = "twitter"/></Button>
+              <Button as = {NavLink} exact to={"/who"}><Icon name = "twitter"/></Button>
               <Button><Icon name = "instagram"/></Button>
               <Button><Icon name = "youtube"/></Button>
             </Button.Group>

@@ -6,8 +6,9 @@ import { Header, Container, Segment } from 'semantic-ui-react';
 class　Who extends React.Component {
   render() {
     return (
-        <Container fluid>
         <div className='who'>
+          <br/>
+          <br/>
           <Segment>
             <Segment inverted color = 'teal'><Header as = 'h2'>自己紹介</Header>
             </Segment>
@@ -15,8 +16,6 @@ class　Who extends React.Component {
               NSCA-PTの資格を取得し、パーソナルトレーナーとしての活動を開始した。　SNSの総フォロワー数は合計で３万人を突破した。</p>
           </Segment>
         </div>
-
-        </Container>
     );
   }
 }
