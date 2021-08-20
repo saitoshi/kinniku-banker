@@ -20,9 +20,9 @@ function Home() {
               <Button as = {NavLink} exact to ={"/who"}>WHO IS HIRO?</Button>
               <Button>筋トレ日記</Button>
               <Button>モデル依頼</Button>
-              <Button as = {NavLink} exact to={"/who"}><Icon name = "twitter"/></Button>
-              <Button><Icon name = "instagram"/></Button>
-              <Button><Icon name = "youtube"/></Button>
+              <a href = "https://twitter.com/kinnikubanker"><Button><Icon name = "twitter"/></Button></a>
+              <a href = "https://www.instagram.com/hiro_life6/"><Button><Icon name = "instagram"/></Button></a>
+              <a href = "https://m.youtube.com/channel/UCoA-NBQV0ueE9wKNb1BScAQ"><Button><Icon name = "youtube"/></Button></a>
             </Button.Group>
           </Segment>
         </div>
