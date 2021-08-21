@@ -2,6 +2,7 @@ import React from "react";
 import './style.css';
 import 'semantic-ui-css/semantic.min.css';
 import { Header, Container, Segment } from 'semantic-ui-react';
+import SideNavBar from './SideNavBar';
 
 class　Who extends React.Component {
   render() {
