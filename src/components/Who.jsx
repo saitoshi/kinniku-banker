@@ -7,6 +7,8 @@ import SideNavBar from './SideNavBar';
 class　Who extends React.Component {
   render() {
     return (
+        <div>
+        <SideNavBar/>
         <div className='who'>
           <br/>
           <br/>
@@ -16,6 +18,7 @@ class　Who extends React.Component {
             <p>関西学院大学卒業後、銀行に就職　筋トレを始め、その魅力に取り導かれる。
               NSCA-PTの資格を取得し、パーソナルトレーナーとしての活動を開始した。　SNSの総フォロワー数は合計で３万人を突破した。</p>
           </Segment>
+        </div>
         </div>
     );
   }
