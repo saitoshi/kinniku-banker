@@ -2,7 +2,7 @@ import React from 'react';
 import './style.css';
 import 'semantic-ui-css/semantic.min.css';
 import { Header, Segment, Container, Tab, Image } from 'semantic-ui-react';
-
+import SideNavBar from './SideNavBar';
 const panes = [
   { menuItem: '料金', render: () => <Tab.Pane><ul>
       <li><p>移動と撮影時間に対して、5000円／1h</p></li>
@@ -16,6 +16,7 @@ const panes = [
 function Request() {
   return (
       <div>
+        <SideNavBar/>
         <br/>
         <Container>
           <Segment>
