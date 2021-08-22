@@ -1,7 +1,7 @@
 import React from 'react';
 import './style.css';
 import 'semantic-ui-css/semantic.min.css';
-import { Header, Segment, Container, Tab, Image, Form } from 'semantic-ui-react';
+import { Header, Segment, Container, Tab, Image, Form, Button } from 'semantic-ui-react';
 import SideNavBar from './SideNavBar';
 const panes = [
   { menuItem: '料金', render: () => <Tab.Pane><ul>
@@ -10,7 +10,19 @@ const panes = [
       <li><p>沖縄県南城市からの移動になります</p></li>
     </ul></Tab.Pane> },
   { menuItem: '過去作品', render: () => <Tab.Pane><p></p></Tab.Pane> },
-  { menuItem: 'お問い合わせ', render: () => <Tab.Pane><p>お気軽にInstagramメッセージにて、ご質問ください。</p></Tab.Pane> },
+  { menuItem: 'お問い合わせ', render: () => <Tab.Pane><p>お気軽にInstagramメッセージにて、ご質問ください。</p>
+  <Form>
+    <Form.Field>
+      <label>EMAIL メールアドレス</label>
+      <input placeholder='email メールアドレス'/>
+    </Form.Field>
+    <Form.Field>
+      <label>メッセージ Message</label>
+      <input placeholder='messsage'/>
+    </Form.Field>
+    <Button>Submit 送信</Button>
+  </Form>
+  </Tab.Pane> },
 ]
 
 function Request() {
@@ -27,8 +39,8 @@ function Request() {
             </p>
             <Tab panes = {panes}/>
           </Segment>
+          <br/>
         </Container>
-
       </div>
   );
 }
