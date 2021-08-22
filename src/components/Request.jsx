@@ -1,7 +1,7 @@
 import React from 'react';
 import './style.css';
 import 'semantic-ui-css/semantic.min.css';
-import { Header, Segment, Container, Tab, Image } from 'semantic-ui-react';
+import { Header, Segment, Container, Tab, Image, Form } from 'semantic-ui-react';
 import SideNavBar from './SideNavBar';
 const panes = [
   { menuItem: '料金', render: () => <Tab.Pane><ul>
