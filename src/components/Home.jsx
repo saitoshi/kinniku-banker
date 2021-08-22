@@ -1,12 +1,13 @@
 import React from "react";
 import './style.css';
 import 'semantic-ui-css/semantic.min.css';
-import { Header, Segment, Image, Button, Icon} from 'semantic-ui-react';
+import { Header, Segment, Image, Button, Icon, Container} from 'semantic-ui-react';
 import { NavLink } from 'react-router-dom';
 
 function Home() {
   return (
       <div className="bg-home">
+        <Container>
         <div className="center-screen">
           <Segment>
             <Image src = "https://github.com/saitoshi/kinniku-banker/blob/issue-01/src/components/image/hiro_index.jpg?raw=true" size = "medium" circular centered/>
@@ -26,6 +27,7 @@ function Home() {
             </Button.Group>
           </Segment>
         </div>
+        </Container>
       </div>
   );
 }
