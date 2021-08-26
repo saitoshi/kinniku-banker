@@ -1,13 +1,39 @@
 import React from "react";
 import './style.css';
 import 'semantic-ui-css/semantic.min.css';
-import { Header, Image, Segment } from 'semantic-ui-react';
+import { Button, Container, Form, Header, Image, Segment, Tab } from 'semantic-ui-react';
 import SideNavBar from './SideNavBar';
+
+const ambassadorPane = [
+  { menuItem: 'myProtein', render: () => <Tab.Pane>
+      <Image centered size = 'large' src ='https://pbs.twimg.com/media/E0YZVW8VkAcAAvu?format=jpg&name=medium'/>
+      <br/>
+      <div className='comment'>（何故ひろさんがマイプロをおすすめするか) <br/>
+        <Button href ="http://tidd.ly/8e2a144c">マイプロ購入</Button>
+      </div>
+    </Tab.Pane> },
+  { menuItem: 'Gorilla Wear', render: () => <Tab.Pane>
+      <Image centered size = 'large' src ='https://gorillawearjapan.com/'/>
+      <br/>
+      <div className='comment'>（何故ひろさんがゴリラウェアをおすすめするか) <br/>
+        <br/>
+        <Button href ="https://gorillawearjapan.com/">ゴリラウェア購入</Button>
+        <Segment inverted color = 'teal'>Coupon Code: okinawa15</Segment>
+      </div>
+    </Tab.Pane> },
+  { menuItem: 'Base Food', render: () => <Tab.Pane>  <Image centered size = 'large' src ='https://pbs.twimg.com/media/E08zht6VUAEUy42?format=jpg&name=large'/>
+      <br/>
+      <div className='comment'>（何故ひろさんがベースフードをおすすめするか) <br/>
+        <Button href ="https://shop.basefood.co.jp/lp/form?argument=WTgLzY2D&dmai=a606beace87cea&gbraid=0AAAAADNwYBSZz95VEMVyCzWYgH0tZLszt&gclid=CjwKCAjw1JeJBhB9EiwAV612yyQpfRffxj_jfQLshBRl0GrmhN4gxBKAG3ClZZlB-TinALl_WfE-zxoCCcAQAvD_BwE">ベースフード購入</Button>
+      </div>
+    </Tab.Pane> },
+]
 
 class　Who extends React.Component {
   render() {
     return (
         <div>
+          <Container fluid>
         <SideNavBar/>
         <div className='who'>
           <br/>
@@ -21,8 +47,10 @@ class　Who extends React.Component {
           </Segment>
           <Segment>
             <Segment inverted color = 'teal'><Header as = 'h2' textAlign = 'center'>Ambassador</Header></Segment>
+            <Tab panes = {ambassadorPane}/>
           </Segment>
         </div>
+          </Container>
         </div>
     );
   }
