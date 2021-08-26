@@ -47,6 +47,8 @@ class　Who extends React.Component {
           </Segment>
           <Segment>
             <Segment inverted color = 'teal'><Header as = 'h2' textAlign = 'center'>Ambassador</Header></Segment>
+            <div className='comment'>僕がアンバサダーとして活躍している各商品です。</div>
+            <br/>
             <Tab panes = {ambassadorPane}/>
           </Segment>
         </div>
