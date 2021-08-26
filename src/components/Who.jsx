@@ -13,12 +13,12 @@ const ambassadorPane = [
       </div>
     </Tab.Pane> },
   { menuItem: 'Gorilla Wear', render: () => <Tab.Pane>
-      <Image centered size = 'large' src ='https://gorillawearjapan.com/'/>
+      <Image centered size = 'large' src ='https://pbs.twimg.com/media/E08zht6VUAEUy42?format=jpg&name=large'/>
       <br/>
       <div className='comment'>（何故ひろさんがゴリラウェアをおすすめするか) <br/>
         <br/>
         <Button href ="https://gorillawearjapan.com/">ゴリラウェア購入</Button>
-        <Segment inverted color = 'teal'>Coupon Code: okinawa15</Segment>
+        <Segment inverted color = 'teal'><b>Coupon Code: okinawa15</b></Segment>
       </div>
     </Tab.Pane> },
   { menuItem: 'Base Food', render: () => <Tab.Pane>  <Image centered size = 'large' src ='https://pbs.twimg.com/media/E08zht6VUAEUy42?format=jpg&name=large'/>
@@ -33,8 +33,8 @@ class　Who extends React.Component {
   render() {
     return (
         <div>
-          <Container fluid>
         <SideNavBar/>
+          <Container fluid>
         <div className='who'>
           <br/>
           <br/>
