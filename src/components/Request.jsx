@@ -5,7 +5,7 @@ import { Header, Segment, Container, Tab, Image, Form, Button } from 'semantic-u
 import SideNavBar from './SideNavBar';
 const panes = [
   { menuItem: '料金', render: () => <Tab.Pane><ul>
-      <li><p>移動と撮影時間に対して、5000円／1h</p></li>
+      <li><p>移動と撮影時間に対して、<b>5000円／1h</b></p></li>
       <li><p>上記に加え、移動費用のご負担をお願い致します！</p></li>
       <li><p>沖縄県南城市からの移動になります</p></li>
     </ul></Tab.Pane> },
