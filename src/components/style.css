@@ -84,6 +84,10 @@ p {
     padding: 60px 50px 50px 60px;
 }
 
+.comment b {
+    color: blue;
+}
+
 .comment {
     text-align: center;
     font-size: 18px;

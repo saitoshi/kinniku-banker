@@ -7,9 +7,17 @@ import SideNavBar from './SideNavBar';
 const ambassadorPane = [
   { menuItem: 'myProtein', render: () => <Tab.Pane>
       <Image centered size = 'large' src ='https://pbs.twimg.com/media/E0YZVW8VkAcAAvu?format=jpg&name=medium'/>
-      <br/>
-      <div className='comment'>（何故ひろさんがマイプロをおすすめするか) <br/>
-        <Button href ="http://tidd.ly/8e2a144c">マイプロ購入</Button>
+      <Header as = 'h2' textAlign = 'center'>myProtein のここが凄い！！</Header>
+      <div className='comment'>
+        <ol>
+          <li>業界トップクラスで値段が安く、筋トレ初心者の方でも、使いやすいこと</li>
+          <li>プロテインやアミノ酸など、身体を作るのに不可欠な商品のラインナップが豊富で、沢山の選択肢があること</li>
+          <li>成分や品質も最近大幅な改善が行われて、安心・安全に利用できる</li>
+        </ol>
+        以下、<b>安い！商品が豊富！品質が良い！</b>の3点から、とてもお勧めしています😊
+        <br/>
+        <br/>
+        <Button href ="http://tidd.ly/8e2a144c" color = 'teal' size ='big'>マイプロ購入</Button>
       </div>
     </Tab.Pane> },
   { menuItem: 'Gorilla Wear', render: () => <Tab.Pane>
@@ -34,8 +42,7 @@ class　Who extends React.Component {
     return (
         <div>
         <SideNavBar/>
-          <Container fluid>
-        <div className='who'>
+          <Container>
           <br/>
           <br/>
           <Segment>
@@ -51,7 +58,7 @@ class　Who extends React.Component {
             <br/>
             <Tab panes = {ambassadorPane}/>
           </Segment>
-        </div>
+            <br/>
           </Container>
         </div>
     );
