@@ -35,8 +35,10 @@ const ambassadorPane = [
       </div>
     </Tab.Pane> },
   { menuItem: 'Base Food', render: () => <Tab.Pane>  <Image centered size = 'large' src ='https://pbs.twimg.com/media/E08zht6VUAEUy42?format=jpg&name=large'/>
-      <br/>
-      <div className='comment'>（何故ひろさんがベースフードをおすすめするか) <br/>
+      <Header as = 'h2' textAlign = 'center'>ベースフード　のここが凄い！！</Header>
+      <div className='comment'>
+        手軽にタンパク質を始めとした、栄養素が得られるので、
+        時間がない朝や、ちょっとした隙間時間の栄養補給に最適
         <Button color = 'teal' size = 'big' href ="https://shop.basefood.co.jp/lp/form?argument=WTgLzY2D&dmai=a606beace87cea&gbraid=0AAAAADNwYBSZz95VEMVyCzWYgH0tZLszt&gclid=CjwKCAjw1JeJBhB9EiwAV612yyQpfRffxj_jfQLshBRl0GrmhN4gxBKAG3ClZZlB-TinALl_WfE-zxoCCcAQAvD_BwE">ベースフード購入</Button>
       </div>
     </Tab.Pane> },
