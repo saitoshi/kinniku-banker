@@ -1,7 +1,7 @@
 import React from "react";
 import './style.css';
 import 'semantic-ui-css/semantic.min.css';
-import { Button, Container, Form, Header, Image, Segment, Tab } from 'semantic-ui-react';
+import { Button, Container, Header, Image, Segment, Tab } from 'semantic-ui-react';
 import SideNavBar from './SideNavBar';
 
 const ambassadorPane = [
