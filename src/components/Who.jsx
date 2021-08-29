@@ -22,17 +22,22 @@ const ambassadorPane = [
     </Tab.Pane> },
   { menuItem: 'Gorilla Wear', render: () => <Tab.Pane>
       <Image centered size = 'large' src ='https://pbs.twimg.com/media/E08zht6VUAEUy42?format=jpg&name=large'/>
-      <br/>
-      <div className='comment'>（何故ひろさんがゴリラウェアをおすすめするか) <br/>
+      <Header as = 'h2' textAlign = 'center'>ゴリラウェア　のここが凄い！！</Header>
+      <div className='comment'>
+        <ol>
+          <li>デザインがカッコ良くて、着ていると、自然とモチベーションが上がる</li>
+          <li>着用感がとても良く、動きやすくトレーニングしやすい</li>
+          <li>個人的にゴリラが大好き💕</li>
+        </ol>
         <br/>
-        <Button href ="https://gorillawearjapan.com/">ゴリラウェア購入</Button>
+        <Button color = 'teal' size = 'big' href ="https://gorillawearjapan.com/">ゴリラウェア購入</Button>
         <Segment inverted color = 'teal'><b>Coupon Code: okinawa15</b></Segment>
       </div>
     </Tab.Pane> },
   { menuItem: 'Base Food', render: () => <Tab.Pane>  <Image centered size = 'large' src ='https://pbs.twimg.com/media/E08zht6VUAEUy42?format=jpg&name=large'/>
       <br/>
       <div className='comment'>（何故ひろさんがベースフードをおすすめするか) <br/>
-        <Button href ="https://shop.basefood.co.jp/lp/form?argument=WTgLzY2D&dmai=a606beace87cea&gbraid=0AAAAADNwYBSZz95VEMVyCzWYgH0tZLszt&gclid=CjwKCAjw1JeJBhB9EiwAV612yyQpfRffxj_jfQLshBRl0GrmhN4gxBKAG3ClZZlB-TinALl_WfE-zxoCCcAQAvD_BwE">ベースフード購入</Button>
+        <Button color = 'teal' size = 'big' href ="https://shop.basefood.co.jp/lp/form?argument=WTgLzY2D&dmai=a606beace87cea&gbraid=0AAAAADNwYBSZz95VEMVyCzWYgH0tZLszt&gclid=CjwKCAjw1JeJBhB9EiwAV612yyQpfRffxj_jfQLshBRl0GrmhN4gxBKAG3ClZZlB-TinALl_WfE-zxoCCcAQAvD_BwE">ベースフード購入</Button>
       </div>
     </Tab.Pane> },
 ]
