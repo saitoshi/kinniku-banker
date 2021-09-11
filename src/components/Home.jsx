@@ -19,7 +19,7 @@ function Home() {
             <br/>
             <Button.Group>
               <Button as = {NavLink} exact to ={"/who"}>WHO IS HIRO?</Button>
-              <Button>筋トレ日記</Button>
+              <Button as = {NavLink} exact to = {"/muscle"}>筋トレ日記</Button>
               <Button as = {NavLink} exact to = {"/request"}>モデル依頼</Button>
               <a href = "https://twitter.com/kinnikubanker"><Button><Icon name = "twitter"/></Button></a>
               <a href = "https://www.instagram.com/hiro_life6/"><Button><Icon name = "instagram"/></Button></a>
