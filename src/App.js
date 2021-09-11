@@ -2,7 +2,7 @@ import React from "react";
 import { HashRouter as Router, Route, Switch } from "react-router-dom";
 import {
   Home,
-  Who, Request
+  Who, Request, Muscle
 } from "./components";
 function App() {
   return (
@@ -12,6 +12,7 @@ function App() {
           <Route path="/" exact component={() => <Home />} />
           <Route path="/who" exact component={() => <Who />} />
           <Route path="/request" exact component={() => <Request />} />
+          <Route path="/muscle" exact component={() => <Muscle />} />
         </Switch>
       </Router>
     </div>

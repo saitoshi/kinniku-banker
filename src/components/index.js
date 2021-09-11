@@ -3,4 +3,5 @@ export { default as Home } from "./Home";
 export { default as Who } from "./Who";
 export { default as Request } from "./Request";
 export { default as SideNavBar } from "./SideNavBar";
+export { default as Muscle } from "./Muscle";
 
